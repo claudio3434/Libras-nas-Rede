@@ -1,0 +1,158 @@
+body {
+    background: #dce0e6;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.noise {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/div.noise.png"); 
+    opacity: 100; 
+    pointer-events: none; 
+    z-index: -1; 
+}
+
+.Menu {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin: 0 3px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.555);
+}
+
+a:hover {
+    color: black;
+}
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333; 
+    text-align: center;
+    margin-bottom: 20px; 
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif; 
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.486);
+}
+
+p {
+    font-size: 1.4em;
+    line-height: 1.5; 
+    color: #000000; 
+    padding: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+}
+
+.highlight {
+    font-weight: bold;
+    color: #1900ff; 
+}
+
+.Logo {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: auto; 
+    margin-top: 50px;
+    
+}
+
+.Logo img {
+    max-width: 40%; 
+    height: auto; 
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px; /* Espaçamento entre o conteúdo e os cards */
+}
+
+.card {
+    margin: 10px;
+    text-align: center;
+    max-width: 200px;
+    background-color: #ffffff00;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-top: 5px solid #1900ff;
+}
+
+.card-border {
+    border: 5px solid #1900ff; /* Adiciona uma borda azul ao redor do card */
+}
+
+.card p {
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .card {
+        max-width: 100%;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .Menu {
+        margin: 5px 0; 
+    }
+
+    .content {
+        padding: 0 10px; 
+    }
+
+    h1 {
+        font-size: 1.8em; 
+    }
+
+    p {
+        font-size: 1.2em; 
+    }
+
+    .Logo {
+        margin-top: 30px; 
+    }
+}

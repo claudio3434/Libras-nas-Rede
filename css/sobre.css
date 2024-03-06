@@ -1,0 +1,101 @@
+body {
+    background: #dce0e6;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.noise {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/div.noise.png"); 
+    opacity: 100; 
+    pointer-events: none; 
+    z-index: -1; 
+}
+
+.Menu {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin: 0 3px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.555);
+}
+
+a:hover {
+    color: black;
+}
+
+
+.card {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Para garantir que a imagem não ultrapasse os limites do card */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    display: block;
+    margin: 0 auto; /* Centralizar a imagem no meio */
+    max-width: 50%; /* Para garantir que a imagem não ultrapasse os limites do card */
+    height: auto; /* Para manter a proporção da imagem */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.card-link {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.card-link:hover {
+    background-color: #0056b3;
+}
